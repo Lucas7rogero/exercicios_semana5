@@ -22,7 +22,11 @@ var x = 5;
 console.log(y);
 let y = 10;
 ```
-a) A saída será undefined seguido de erro 
+✅<ins> **a) A saída será undefined seguido de erro**</ins> 
+
+**JUSTIFICATIVA:
+"var" permite o acesso antes da inicialização e 
+"let" não permite acesso antes da inicialização.**
 
 b) A saída será 5 seguido de 10
 
@@ -43,7 +47,10 @@ function soma(a, b) {
 console.log(soma(2, 0));
 ```
 
-a) Substituir if (a || b === 0) por if (a === 0 || b === 0)
+✅<ins> **a) Substituir if (a || b === 0) por if (a === 0 || b === 0)** </ins>
+
+**JUSTIFICATIVA: 
+Apenas a === 0 || b === 0 verifica corretamente se "a" ou "b" é igual a zero**
 
 b) Substituir if (a || b === 0) por if (a === 0 && b === 0)
 
@@ -78,7 +85,10 @@ console.log(calcularPreco("eletrônico"));
 
 a) O código imprime 1000.
 
-b) O código imprime 200.
+✅<ins> **b) O código imprime 200.** </ins>
+
+**JUSTIFICATIVA:
+A falta do break no case eletrônico faz com que o código continua para o próximo case, escrevendo o valor 200.** 
 
 c) O código imprime 50.
 
@@ -99,7 +109,11 @@ b) 6
 
 c) 18
 
-d) 24
+✅<ins> **d) 24** </ins>
+
+**JUSTIFICATIVA:
+Os numeros após o "map" são: 2, 4, 6, 8 e 10. Após o "filter" sobra o 6, 8 e 10 (pois são maiores que 5). Na "reduce", os valores restantes são somados, ou seja, 6 + 8 + 10 = 24**
+
 ______
 **5) Qual será o conteúdo do array lista após a execução do código? Indique a alternativa correta e justifique sua resposta.**
 
@@ -113,7 +127,10 @@ a) ["banana", "maçã", "uva", "abacaxi", "manga", "laranja"]
 
 b) ["banana", "abacaxi", "manga"]
 
-c) ["banana", "abacaxi", "manga", "laranja"]
+✅<ins> **c) ["banana", "abacaxi", "manga", "laranja"]** </ins>
+
+**JUSTIFICATIVA: 
+O "splice" é basicamente (índice, quantidadeParaRemover, abacaxi, manga). Com o índice começando na posição 1 (maçã) e removendo os 2 elementos seguintes, sobrea apenas a banana e a laranja.**
 
 d) ["banana", "maçã", "uva", "abacaxi", "manga"]
 ______
@@ -123,7 +140,10 @@ I. A herança é utilizada para compartilhar métodos e propriedades entre class
 II. Em JavaScript, a herança é implementada através da palavra-chave `extends`.
 
 
-a) As duas afirmações são verdadeiras, e a segunda justifica a primeira.
+✅<ins> **a) As duas afirmações são verdadeiras, e a segunda justifica a primeira.**</ins>
+
+**JUSTIFICATIVA:
+O termo "extends" em JS é usado como herança, que nada mais é do uma classe herdar os métodos de outra sem a necessidade de repetir código.**
 
 b) As duas afirmações são verdadeiras, mas a segunda não justifica a primeira.
 
@@ -165,7 +185,10 @@ III) O código não funciona corretamente, pois Funcionario não pode herdar de 
 
 Quais das seguintes afirmações são verdadeiras sobre o código acima?
 
-a) I e II são verdadeiras.
+✅<ins> **a) I e II são verdadeiras.**</ins>
+
+**JUSTIFICATIVA:
+A afirmação III é falsa porque JavaScript suporta herança com "extends"**
 
 b) I, II e III são verdadeiras.
 
@@ -182,7 +205,9 @@ ______
 
 a) A asserção é falsa e a razão é verdadeira.
 
-b) A asserção é verdadeira e a razão é falsa.
+✅<ins> **b) A asserção é verdadeira e a razão é falsa.** </ins>
+**JUSTIFICATIVA:
+O conceito de polimorfismo em Programação Orientada a Objetos permite que objetos de diferentes tipos respondam à mesma mensagem de maneiras diferentes. Em JavaScript, o polimorfismo não pode ser implementado utilizando o método de sobrecarga de métodos em uma classe.**
 
 c) A asserção é verdadeira e a razão é verdadeira, mas a razão não explica a asserção.
 
