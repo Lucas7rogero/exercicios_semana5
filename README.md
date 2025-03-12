@@ -220,14 +220,17 @@ ______
 
 ```javascript
 function somaArray(numeros) {
-
-    for (i = 0; i < numeros.size; i++) {
-        soma = 2*numeros[i];
-    }
-    return soma;
+  let soma = 0; //variavel que define o inicio da soma em 0
+  for (let i = 0; i < numeros.length; i++) { //contagem da array
+    soma += 2 * numeros[i]; //soma todos os termos da array e multiplica por 2
+  }
+  return soma;
 }
-console.log(somaArray([1, 2, 3, 4]));
+console.log(somaArray([1, 2, 3, 4])); //resposta 20
 ```
+
+**JUSTIFICATIVA: faltava adicionar a variavel da soma começando em 0, adicionar a variavel na linha da contagem da array, e trocar o "size" que não existe por length**
+
 ______
 10) Crie um exemplo prático no qual você tenha duas classes:
 
